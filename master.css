@@ -1,0 +1,56 @@
+body {
+  background-color: #000; /* Black background for entire page */
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+main {
+  padding: 30px;
+  width: 40%;
+  border: 2px solid #07ff00; /* Green border */
+  margin: 0 auto; /* Center the main content horizontally */
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main form input[type="text"],
+main form #cepError {
+  width: 50%;
+  border: 1px solid #07ff00; /* Green border for inputs and error message */
+  padding: 10px;
+  outline: none;
+  background-color: rgb(56, 56, 56);
+  color: white;
+}
+
+main form input[type="text"]::-webkit-input-placeholder,
+main form input[type="text"]::-moz-placeholder { /* Placeholder color for all browsers */
+  color: white;
+}
+
+main form input {
+  margin: 10px 0; /* Margin between inputs */
+}
+
+.hidden {
+  display: none;
+  color: #07ff00; /* Green color for hidden class */
+}
+
+.input-cep-error {
+  border: 1px solid #f00; /* Red border for error */
+  background: rgba(255, 0, 0, 0.1); /* Red tint for background */
+}
+
+main form #cepError {
+  color: rgba(255, 0, 0, 0.68); /* Red color for error message with transparency */
+  margin-top: -5px; /* Adjust position of error message */
+}
